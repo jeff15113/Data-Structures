@@ -21,6 +21,8 @@ class BinarySearchTree:
         pass
 
     def get_max(self):
+        # If self.right is None: self.right = maxvalue
+        # if self.right is not None: check next node
         pass
 
     def for_each(self, cb):
