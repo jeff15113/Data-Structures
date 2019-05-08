@@ -6,13 +6,13 @@ class BinarySearchTree:
 
     def insert(self, value):
         if (value <= self.value):
-            if(self.value is None):
+            if(self.left is None):
                 self.left = BinarySearchTree(value)
             else:
                 self.left.insert(value)
 
         elif (value > self.value):
-            if(self.value is None):
+            if(self.right is None):
                 self.right = BinarySearchTree(value)
             else:
                 self.right.insert(value)
@@ -25,3 +25,8 @@ class BinarySearchTree:
 
     def for_each(self, cb):
         pass
+
+
+tree = BinarySearchTree(5)
+
+tree.insert(3)
